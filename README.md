@@ -1,4 +1,4 @@
-# CoinMarketCap API collector
+# CryptoMarket Datacollector
 Utilizes a azure function to updated the coinmarketcap.com prices from their API to a storage on azure. 
 The function triggers every 8 hours - (the api is limited to the free tier)
 
