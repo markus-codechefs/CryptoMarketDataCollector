@@ -16,6 +16,8 @@ public class SchedulerTriggerTests
         var result = JsonConvert.DeserializeObject<CoinModel>(json);     
 
         Assert.NotNull(json);
+        Assert.NotNull(result);
+        Assert.Equal("BTC", result.Data[0].Symbol);
     }
 
     private string GetJsonFile()
