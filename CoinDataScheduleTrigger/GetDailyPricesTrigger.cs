@@ -3,10 +3,9 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using RestSharp;
-using ApiDudes.CoinMarketCap;
 using System.Text.Json;
 
-namespace ApiDudes.GetDallyPrices
+namespace ApiDudes.CoinDataScheduleTrigger
 {
     public class GetDailyPricesTrigger
     {
