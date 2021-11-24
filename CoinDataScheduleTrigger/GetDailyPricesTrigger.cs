@@ -1,9 +1,8 @@
 using System;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using RestSharp;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace ApiDudes.CoinDataScheduleTrigger
 {
@@ -29,7 +28,7 @@ namespace ApiDudes.CoinDataScheduleTrigger
 
             var response = client.Get(request);
 
-            var model = JsonSerializer.Deserialize(response.Content,typeof(CoinModel));
+            var model = JsonConvert.DeserializeObject<CoinModel>(response.Content);
         }
     }    
 }
