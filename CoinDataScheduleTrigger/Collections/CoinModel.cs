@@ -88,13 +88,13 @@ namespace ApiDudes.CoinDataScheduleTrigger
         public double PercentChange7D { get; set; }
 
         [JsonProperty("percent_change_30d")]
-        public double PercentChange30D { get; set; }
+        public double? PercentChange30D { get; set; }
 
         [JsonProperty("percent_change_60d")]
-        public double PercentChange60D { get; set; }
+        public double? PercentChange60D { get; set; }
 
         [JsonProperty("percent_change_90d")]
-        public double PercentChange90D { get; set; }
+        public double? PercentChange90D { get; set; }
 
         [JsonProperty("market_cap")]
         public double MarketCap { get; set; }
