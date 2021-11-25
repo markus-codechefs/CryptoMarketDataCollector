@@ -1,8 +1,7 @@
 using Xunit;
 using System.IO;
 using Newtonsoft.Json;
-using ApiDudes.CoinDataScheduleTrigger;
-
+using ApiDudes.Model;
 
 namespace Tests;
 

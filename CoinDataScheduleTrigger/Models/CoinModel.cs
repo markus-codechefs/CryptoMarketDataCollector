@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
-namespace ApiDudes.CoinDataScheduleTrigger
-{    
+namespace ApiDudes.Model
+{
 
     public partial class CoinModel
     {
@@ -13,10 +11,10 @@ namespace ApiDudes.CoinDataScheduleTrigger
         public Status Status { get; set; }
 
         [JsonProperty("data")]
-        public List<Datum> Data { get; set; }
+        public List<CoinData> Data { get; set; }
     }
 
-    public partial class Datum
+    public partial class CoinData
     {
         [JsonProperty("id")]
         public long Id { get; set; }
